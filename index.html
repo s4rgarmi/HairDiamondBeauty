@@ -3,97 +3,584 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/png" href="/images/logo-kapsalon-diamond-hair-beauty.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kapsalon - Diamond Hair Beauty | Luxe kapsalon in Antwerpen</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Kapsalon - Diamond Hair Beauty" />
-    <meta
-      name="keywords"
-      content="kapsalon Antwerpen, diamond hair beauty, balayage, keratine behandeling, bruidskapsels, kapsalon frankrijklei, luxe kapsalon België"
-    />
     <meta
       name="description"
-      content="Kapsalon - Diamond Hair Beauty is het luxe kapsalon in Antwerpen voor balayage, keratine en bridal styling. Boek jouw afspraak en ervaar premium haarverzorging."
+      content="Hair Diamond Beauty biedt luxe kapsalon-services in Antwerpen met balayage, keratine, bridal styling en persoonlijke verzorging."
     />
-    <link rel="canonical" href="https://hairdiamondbeauty.be" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="nl_BE" />
-    <meta
-      property="og:title"
-      content="Kapsalon - Diamond Hair Beauty | Luxe kapsalon in Antwerpen"
-    />
-    <meta
-      property="og:description"
-      content="Laat je verwennen door topstylisten bij Kapsalon - Diamond Hair Beauty. Luxe knip- en kleurbehandelingen, keratine en bridal packages."
-    />
-    <meta property="og:url" content="https://hairdiamondbeauty.be" />
-    <meta property="og:site_name" content="Kapsalon - Diamond Hair Beauty" />
-    <meta property="og:image:alt" content="Logo van Kapsalon - Diamond Hair Beauty" />
-    <meta property="og:image" content="https://hairdiamondbeauty.be/images/logo-kapsalon-diamond-hair-beauty.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kapsalon - Diamond Hair Beauty | Luxe kapsalon in Antwerpen" />
-    <meta
-      name="twitter:description"
-      content="Luxe kapsalon op de Frankrijklei in Antwerpen. Kwalitatieve knip- en kleurservices, keratinebehandelingen en bruidsstyling."
-    />
-    <meta name="twitter:image" content="https://hairdiamondbeauty.be/images/logo-kapsalon-diamond-hair-beauty.png" />
-    <meta name="theme-color" content="#FFFFFF" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script id="setmore_script" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "HairSalon",
-        "name": "Kapsalon - Diamond Hair Beauty",
-        "image": "https://hairdiamondbeauty.be/images/logo-kapsalon-diamond-hair-beauty.png",
-        "@id": "https://hairdiamondbeauty.be",
-        "url": "https://hairdiamondbeauty.be",
-        "telephone": "+32 470 77 62 20",
-        "email": "simajasor73@gmail.com",
-        "priceRange": "€€",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Frankrijklei 56",
-          "addressLocality": "Antwerpen",
-          "postalCode": "2000",
-          "addressCountry": "BE"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 51.2155,
-          "longitude": 4.4119
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "10:00",
-            "closes": "18:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/kapsalondiamond/",
-          "https://www.facebook.com/306242422569306?ref=pro_upsell_xav_ig_profile_page_web",
-          "https://www.tiktok.com/@kapsalon_diamond?_t=ZG-90kDiQGjhZZ&_r=1"
-        ]
-      }
-    </script>
+    <link rel="icon" type="image/png" href="./images/logo-kapsalon-diamond-hair-beauty.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header" id="top">
+      <div class="header__inner">
+        <a class="brand" href="#home">
+          <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Logo" />
+          <span>Hair Diamond Beauty</span>
+        </a>
+        <nav class="header-nav">
+          <a href="#about">Over ons</a>
+          <a href="#services">Diensten</a>
+          <a href="#lookbook">Lookbook</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <span class="eyebrow">Elegance in every detail</span>
+          <h1>Kapsalon - Diamond Hair Beauty</h1>
+          <p>
+            Luxe kapsalon in het hart van Antwerpen. Laat je verwennen door toonaangevende stylisten en
+            ervaar service die straalt in stijl, vertrouwen en kwaliteit.
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn-gold js-book-button" type="button">Boek nu</button>
+            <span class="hero__note">Plan je afspraak in enkele seconden.</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">
+        <div class="section-divider__inner">
+          <span class="section-divider__line"></span>
+          <span class="section-divider__logo">
+            <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Hair Diamond Beauty" />
+          </span>
+          <span class="section-divider__line"></span>
+        </div>
+      </div>
+
+      <section id="about" class="section section--about reveal">
+        <div class="section__inner about-grid">
+          <div>
+            <span class="eyebrow">Over ons</span>
+            <h2>Vakmanschap, zorg en een persoonlijke aanpak</h2>
+            <p>
+              Hair Diamond Beauty is een boutique kapsalon dat luxe haarverzorging combineert met ongeëvenaarde
+              service. Van precisieknipbeurten en balayage tot keratinebehandelingen – ons team creëert looks die
+              jouw persoonlijkheid laten schitteren. Onze missie? Jouw natuurlijke schoonheid versterken met een
+              ervaring die zowel ontspannend als inspirerend is.
+            </p>
+            <p>
+              We werken uitsluitend met hoogwaardige producten, nemen de tijd voor uitgebreid advies en begeleiden je
+              naar het kapsel dat het beste bij jou past. Of je nu een snelle touch-up of een volledige make-over wilt:
+              je bent welkom.
+            </p>
+            <div class="about-socials">
+              <a href="https://www.instagram.com/kapsalondiamond/" target="_blank" rel="noreferrer">Instagram</a>
+              <a
+                href="https://www.facebook.com/306242422569306?ref=pro_upsell_xav_ig_profile_page_web"
+                target="_blank"
+                rel="noreferrer"
+                >Facebook</a
+              >
+              <a
+                href="https://www.tiktok.com/@kapsalon_diamond?_t=ZG-90kDiQGjhZZ&_r=1"
+                target="_blank"
+                rel="noreferrer"
+                >TikTok</a
+              >
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="./images/7a63d4c9-35f1-4af4-b617-7c3ef0936961.jpg" alt="Styliste aan het werk" />
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">
+        <div class="section-divider__inner">
+          <span class="section-divider__line"></span>
+          <span class="section-divider__logo">
+            <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Hair Diamond Beauty" />
+          </span>
+          <span class="section-divider__line"></span>
+        </div>
+      </div>
+
+      <section id="lookbook" class="section section--gallery reveal">
+        <div class="section__inner">
+          <div class="section__intro">
+            <span class="eyebrow">Lookbook</span>
+            <h2>Laat je inspireren door ons werk</h2>
+            <p>
+              Een selectie van recente creaties – van balayage tot bruidsstyling. Iedere foto toont de aandacht voor
+              detail die je van ons salon verwacht.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-grid__item"><img src="./images/haarfoto1.jpeg" alt="Lookbook foto 1" /></figure>
+            <figure class="gallery-grid__item"><img src="./images/haarfoto2.jpeg" alt="Lookbook foto 2" /></figure>
+            <figure class="gallery-grid__item"><img src="./images/haarfoto3.jpeg" alt="Lookbook foto 3" /></figure>
+            <figure class="gallery-grid__item"><img src="./images/haarfoto4.jpeg" alt="Lookbook foto 4" /></figure>
+            <figure class="gallery-grid__item"><img src="./images/haarfoto5.jpeg" alt="Lookbook foto 5" /></figure>
+            <figure class="gallery-grid__item"><img src="./images/haarfoto6.jpeg" alt="Lookbook foto 6" /></figure>
+          </div>
+          <div class="section__intro" style="margin-top: 2rem">
+            <button class="btn btn-gold js-book-button" type="button">Boek nu je afspraak</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">
+        <div class="section-divider__inner">
+          <span class="section-divider__line"></span>
+          <span class="section-divider__logo">
+            <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Hair Diamond Beauty" />
+          </span>
+          <span class="section-divider__line"></span>
+        </div>
+      </div>
+
+      <section id="services" class="section section--services reveal">
+        <div class="section__inner">
+          <div class="section__intro">
+            <span class="eyebrow">Diensten & prijzen</span>
+            <h2>Verzorging op maat voor elke gelegenheid</h2>
+            <p>
+              Alle behandelingen zijn inclusief persoonlijk advies en styling. Kies een service en boek meteen je plek.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Brushing</h3>
+                  <span class="badge">Styling</span>
+                </div>
+                <p>Styling met volume en glans afgestemd op jouw coupe.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €20</span>
+                <button class="btn-link js-book-button" type="button">
+                  Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Knippen + wassen + verzorging + droging</h3>
+                  <span class="badge">Complete service</span>
+                </div>
+                <p>Complete verzorging van wassen tot afwerking voor gezond haar.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€30</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Knippen &amp; brushing</h3>
+                  <span class="badge">Signature cut</span>
+                </div>
+                <p>Precisieknip gecombineerd met een gepersonaliseerde blow-out.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €40</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Knippen meisjes tot 12 jaar</h3>
+                  <span class="badge">Kids</span>
+                </div>
+                <p>Speelse kapsels met zachte producten voor jonge dames.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€18</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Volledig kleuren</h3>
+                  <span class="badge">Kleuren</span>
+                </div>
+                <p>Egaal kleurresultaat met beschermende verzorging.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €40</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Uitgroei kleuren</h3>
+                  <span class="badge">Kleuren</span>
+                </div>
+                <p>Touch-up van je uitgroei voor een naadloze overgang.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€35</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Ombré</h3>
+                  <span class="badge">Balayage</span>
+                </div>
+                <p>Diep kleurverloop van donker naar licht voor extra dimensie.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €60</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Halve balayage</h3>
+                  <span class="badge">Balayage</span>
+                </div>
+                <p>Accent highlightings voor een natuurlijke, zonnige look.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €50</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Volledige balayage</h3>
+                  <span class="badge">Balayage</span>
+                </div>
+                <p>All-over balayage voor maximale helderheid en diepte.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €60</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Olaplex herstel</h3>
+                  <span class="badge">Herstel</span>
+                </div>
+                <p>Beschermt en herstelt de haarstructuur tijdens kleur of styling.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€25</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Toner</h3>
+                  <span class="badge">Finishing</span>
+                </div>
+                <p>Verfijnt je kleur en neutraliseert ongewenste tinten.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €25</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Permanent</h3>
+                  <span class="badge">Textuur</span>
+                </div>
+                <p>Langdurige krullen of volume op maat van je stijl.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €60</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Proteïne botox behandeling</h3>
+                  <span class="badge">Herstel</span>
+                </div>
+                <p>Regenererende boost voor sterk, glad en glanzend haar.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €70</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Braziliaanse keratine</h3>
+                  <span class="badge">Smoothing</span>
+                </div>
+                <p>Intens gladmakende keratinebehandeling tegen pluis.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €80</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Wenkbrauwen epileren</h3>
+                  <span class="badge">Brows</span>
+                </div>
+                <p>Perfect gevormde wenkbrauwen met strakke afwerking.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">vanaf €10</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Gezicht epileren</h3>
+                  <span class="badge">Beauty</span>
+                </div>
+                <p>Zachte ontharing van het gezicht voor een egale huid.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€10</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Wenkbrauwen kleuren</h3>
+                  <span class="badge">Brows</span>
+                </div>
+                <p>Intense kleur en definitie voor je wenkbrauwen.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€10</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <div class="service-card__header">
+                  <h3>Bruidstyling</h3>
+                  <span class="badge">Bridal</span>
+                </div>
+                <p>Proefsessie + styling op de grote dag met aandacht voor elk detail.</p>
+              </div>
+              <div class="service-card__footer">
+                <span class="price">€250 – €300</span>
+                <button class="btn-link js-book-button" type="button">Boek
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider">
+        <div class="section-divider__inner">
+          <span class="section-divider__line"></span>
+          <span class="section-divider__logo">
+            <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Hair Diamond Beauty" />
+          </span>
+          <span class="section-divider__line"></span>
+        </div>
+      </div>
+
+      <section id="contact" class="section section--contact reveal">
+        <div class="section__inner">
+          <div class="section__intro">
+            <span class="eyebrow">Contact</span>
+            <h2>Plan je bezoek of stel je vraag</h2>
+            <p>Bel, mail of plan meteen een afspraak via Setmore. We helpen je graag naar jouw perfecte haardag.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card contact-details">
+              <ul>
+                <li>
+                  <strong>Adres</strong>
+                  <p>Frankrijklei 56, 2000 Antwerpen, België</p>
+                </li>
+                <li>
+                  <strong>Telefoon</strong>
+                  <p><a href="tel:+32470776220">+32 470 77 62 20</a></p>
+                </li>
+                <li>
+                  <strong>E-mail</strong>
+                  <p><a href="mailto:simajasor73@gmail.com">simajasor73@gmail.com</a></p>
+                </li>
+                <li>
+                  <strong>BTW</strong>
+                  <p>BE 1021.725.744</p>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-card contact-hours">
+              <h3>Openingsuren</h3>
+              <ul>
+                <li><span>Maandag</span><span>10:00 – 18:00</span></li>
+                <li><span>Dinsdag</span><span>10:00 – 18:00</span></li>
+                <li><span>Woensdag</span><span>10:00 – 18:00</span></li>
+                <li><span>Donderdag</span><span>10:00 – 18:00</span></li>
+                <li><span>Vrijdag</span><span>10:00 – 18:00</span></li>
+                <li><span>Zaterdag</span><span>10:00 – 18:00</span></li>
+                <li><span>Zondag</span><span>Gesloten</span></li>
+              </ul>
+            </div>
+            <div class="map-frame">
+              <iframe
+                title="Hair Diamond Beauty locatie"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.351662309436!2d4.396917476846932!3d51.21463773435616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6f90c77fd4f%3A0xbdeff9cf0c8b9606!2sFrankrijklei%2056%2C%202000%20Antwerpen!5e0!3m2!1snl!2sbe!4v1700000000000"
+                width="600"
+                height="450"
+                style="border:0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__inner">
+        <div>
+          <p>© <span id="year"></span> Kapsalon - Diamond Hair Beauty. Alle rechten voorbehouden.</p>
+          <p class="footer-credit">
+            Website door
+            <a href="mailto:bamdadsoh@gmail.com">Bamdad Sohrabipour</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.instagram.com/kapsalondiamond/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/306242422569306?ref=pro_upsell_xav_ig_profile_page_web" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/@kapsalon_diamond?_t=ZG-90kDiQGjhZZ&_r=1" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="./privacy.html">Privacybeleid</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+    <script src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js" id="setmore_script"></script>
+    <script src="./assets/js/main.js" type="module"></script>
   </body>
 </html>

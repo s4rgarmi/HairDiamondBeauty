@@ -3,23 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacybeleid | Kapsalon - Diamond Hair Beauty</title>
     <meta
       name="description"
-      content="Lees hoe Kapsalon - Diamond Hair Beauty omgaat met jouw persoonsgegevens volgens de GDPR-richtlijnen."
+      content="Lees hoe Kapsalon - Diamond Hair Beauty jouw persoonsgegevens verwerkt volgens de GDPR-richtlijnen."
     />
-    <link rel="icon" type="image/png" href="/images/logo-kapsalon-diamond-hair-beauty.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script id="setmore_script" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
+    <link rel="icon" type="image/png" href="./images/logo-kapsalon-diamond-hair-beauty.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div id="privacy-root"></div>
-    <script type="module" src="/src/privacy/main.jsx"></script>
+    <header class="site-header">
+      <div class="header__inner">
+        <a class="brand" href="./index.html">
+          <img src="./images/logo-kapsalon-diamond-hair-beauty.png" alt="Logo" />
+          <span>Hair Diamond Beauty</span>
+        </a>
+        <nav class="header-nav">
+          <a href="./index.html#about">Over ons</a>
+          <a href="./index.html#services">Diensten</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+        <button class="btn btn-gold js-book-button" type="button">Boek nu</button>
+      </div>
+    </header>
+
+    <main style="padding-top: 90px">
+      <section class="privacy-hero reveal">
+        <div class="section__inner">
+          <span class="eyebrow">Privacybeleid</span>
+          <h1>Jouw privacy, onze zorg</h1>
+          <p>
+            We behandelen persoonsgegevens met de grootste zorg. Hieronder lees je hoe we gegevens verwerken volgens de
+            AVG/GDPR en welke rechten je hebt.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section__inner">
+          <div class="privacy-grid">
+            <article class="privacy-card">
+              <h3>Welke gegevens verzamelen we?</h3>
+              <p>
+                We bewaren enkel gegevens die je zelf doorgeeft tijdens het boeken of wanneer je contact opneemt, zoals
+                naam, telefoonnummer, e-mailadres en eventuele notities over de behandeling.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3>Waarom verwerken we gegevens?</h3>
+              <p>
+                Gegevens worden gebruikt om afspraken te beheren, je te informeren over wijzigingen, betalingen te
+                verwerken en – mits jouw toestemming – promoties of nieuws te versturen.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3>Met wie delen we gegevens?</h3>
+              <p>
+                We delen jouw gegevens niet met derden, behalve met dienstverleners die ons helpen bij het plannen van
+                afspraken (Setmore) of de administratie. Zij verwerken gegevens volgens onze instructies.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3>Bewaartermijnen</h3>
+              <p>
+                Gegevens worden bewaard zolang nodig is om onze diensten te leveren en te voldoen aan wettelijke
+                verplichtingen. Je kan altijd vragen om jouw gegevens te laten verwijderen.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3>Jouw rechten</h3>
+              <p>
+                Je hebt het recht om jouw gegevens in te zien, te corrigeren, te laten verwijderen, bezwaar te maken tegen
+                verwerking en gegevens over te dragen. Neem contact op om deze rechten uit te oefenen.
+              </p>
+            </article>
+            <article class="privacy-card">
+              <h3>Contact</h3>
+              <p>
+                Heb je vragen over dit privacybeleid of wil je jouw rechten uitoefenen? Mail ons via
+                <a href="mailto:simajasor73@gmail.com">simajasor73@gmail.com</a> of bezoek ons in het salon: Frankrijklei
+                56, 2000 Antwerpen.
+              </p>
+            </article>
+          </div>
+          <p class="footer-credit" style="text-align: center; margin-top: 2rem">Laatste update: maart 2025</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__inner">
+        <div>
+          <p>© <span id="year"></span> Kapsalon - Diamond Hair Beauty. Alle rechten voorbehouden.</p>
+          <p class="footer-credit">
+            Website door
+            <a href="mailto:bamdadsoh@gmail.com">Bamdad Sohrabipour</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.instagram.com/kapsalondiamond/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/306242422569306?ref=pro_upsell_xav_ig_profile_page_web" target="_blank" rel="noreferrer">Facebook</a>
+          <a href="https://www.tiktok.com/@kapsalon_diamond?_t=ZG-90kDiQGjhZZ&_r=1" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="./privacy.html">Privacybeleid</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+    <script src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js" id="setmore_script"></script>
+    <script src="./assets/js/main.js" type="module"></script>
   </body>
 </html>
