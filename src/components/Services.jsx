@@ -112,62 +112,9 @@ const services = {
       badge: 'Bridal',
     },
   ],
-  men: [
-    {
-      title: 'Knippen & wassen',
-      description: 'Frisse coupe met reinigende wasbeurt en stylingadvies.',
-      price: '€18',
-      badge: 'Cut',
-    },
-    {
-      title: 'Knippen & baard',
-      description: 'Complete barber combo voor haar en baard in één afspraak.',
-      price: '€20',
-      badge: 'Barber combo',
-    },
-    {
-      title: 'Wenkbrauwen bijwerken',
-      description: 'Strakke wenkbrauwen voor een verzorgde uitstraling.',
-      price: '€10',
-      badge: 'Detail',
-    },
-    {
-      title: 'Baard trimmen',
-      description: 'Definitie en vorm op maat voor elke baardlengte.',
-      price: '€10',
-      badge: 'Grooming',
-    },
-    {
-      title: 'Baard kleuren',
-      description: 'Camoufleer grijze haren en geef je baard extra diepte.',
-      price: '€10',
-      badge: 'Color',
-    },
-    {
-      title: 'Haar kleuren',
-      description: 'Egaal kleurresultaat voor een frisse, moderne look.',
-      price: '€30',
-      badge: 'Color',
-    },
-    {
-      title: 'Balayage voor heren',
-      description: 'Lichte accenten voor extra textuur en dimensie.',
-      price: 'vanaf €40',
-      badge: 'Color',
-    },
-    {
-      title: 'Jongens knippen (tot 12 jaar)',
-      description: 'Trendy kapsels voor kids, snel en stijlvol.',
-      price: '€15',
-      badge: 'Kids',
-    },
-  ],
 }
 
-const categories = [
-  { id: 'women', label: 'Vrouwen' },
-  { id: 'men', label: 'Mannen' },
-]
+const categories = [{ id: 'women', label: 'Vrouwen' }]
 
 const Services = () => {
   const [activeCategory, setActiveCategory] = useState('women')
@@ -235,11 +182,7 @@ const Services = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeCategory}
-            className={`mt-14 grid gap-8 ${
-              activeCategory === 'women'
-                ? 'sm:grid-cols-2 lg:grid-cols-3'
-                : 'sm:grid-cols-2 lg:grid-cols-3'
-            }`}
+            className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
