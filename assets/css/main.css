@@ -370,10 +370,15 @@ main {
   background: var(--color-porcelain);
 }
 
+.section--services .section__inner {
+  max-width: 1240px;
+}
+
 .services-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  align-items: stretch;
 }
 
 .service-card {
@@ -383,7 +388,9 @@ main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.5rem;
+  height: 100%;
+  min-height: 360px;
   box-shadow: var(--shadow-soft);
   transition: var(--transition);
 }
@@ -397,22 +404,41 @@ main {
   transform: translateY(-2px);
 }
 
-.service-card__header {
+@media (max-width: 600px) {
+  .service-card {
+    min-height: 320px;
+  }
+}
+
+.service-card > div:first-of-type {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 1 auto;
+}
+
+.service-card > div:first-of-type p {
+  margin: 0;
+}
+
+.service-card__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
   align-items: flex-start;
 }
 
 .service-card__header h3 {
   margin: 0;
   font-size: 1.15rem;
+  min-width: 0;
+  line-height: 1.3;
 }
 
 .badge {
-  font-size: 0.6rem;
+  font-size: 0.58rem;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   border: 1px solid rgba(198, 166, 100, 0.5);
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
@@ -422,16 +448,20 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  white-space: nowrap;
+  line-height: 1.2;
+  white-space: normal;
+  max-width: 200px;
+  justify-self: end;
+  overflow-wrap: anywhere;
 }
 
 .service-card__footer {
-  margin-top: 1.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .price {
